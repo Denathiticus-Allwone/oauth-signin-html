@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Google Auth Flow Intents</title>
+  <script type="text/javascript">
+    function openMinutemaidFlow() {
+      location.href = "intent:#Intent;component=com.google.android.gms/.auth.uiflows.minutemaid.MinutemaidActivity;end";
+    }
+
+    function openSignInHub() {
+      location.href = "intent:#Intent;component=com.google.android.gms/.auth.signin.SignInHubActivity;end";
+    }
+
+    function openAccountSyncSettings() {
+      location.href = "intent:#Intent;action=android.settings.SYNC_SETTINGS;end";
+    }
+  </script>
+</head>
+<body>
+  <h2>Try launching Google Account Auth/Sign-In intents:</h2>
+  <button onclick="openMinutemaidFlow()">Minutemaid Auth Flow</button><br><br>
+  <button onclick="openSignInHub()">Sign-In Hub</button><br><br>
+  <button onclick="openAccountSyncSettings()">Account Sync Settings</button>
+</body>
+</html>
